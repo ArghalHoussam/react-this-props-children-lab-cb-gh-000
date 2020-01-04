@@ -5,7 +5,7 @@ export default class ThemedDecorations extends React.Component {
 
   render() {
     const childrenWithTheme = React.children.map(this.props.children, child => {
-      return React.cloneElement(child, { className: { this.props.theme } });
+      return React.cloneElement(child, { className: this.props.theme });
     });
 
     return (
